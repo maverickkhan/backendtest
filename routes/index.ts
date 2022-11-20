@@ -4,7 +4,7 @@ import updateLocation from '../controllers/put/update_location'
 import flagAsInfected from '../controllers/put/flag_as_infected'
 import allSurvivors from '../controllers/fetch/all_survivors'
 import tradeItems from '../controllers/post/trade_items'
-import report from '../controllers/fetch/report';
+import report from '../controllers/fetch/report'
 const router = Router()
 
 router.get(`/survivors`, allSurvivors)
