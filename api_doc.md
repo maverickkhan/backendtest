@@ -7,6 +7,9 @@ RUN `yarn start` & After that run `yarn test`
 
 `URL = http://localhost:8081 (Default port can be change in config.json file in root)`
 
+#### User input validation could be done but is skipped for the sake of bare minimum functionality,
+#### However, other types of validation such as unique survivor names are present
+
 #### 1. Registering a new survivor
 
 `POST` request to `/register`
