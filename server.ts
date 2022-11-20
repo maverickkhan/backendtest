@@ -1,7 +1,7 @@
-import Express, {Request, Response} from 'express'
-import bodyParser from "body-parser";
-import cors from "cors"
-import router from "./routes";
+import Express from 'express'
+import bodyParser from 'body-parser'
+import cors from 'cors'
+import router from './routes'
 const app = Express()
 const PORT = 8081
 

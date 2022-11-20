@@ -10,13 +10,13 @@ You, as a zombie resistance member (and the last survivor who knows how to code)
 
 ## Requirements
 
-You will develop a ***REST API*** (yes, we care about architecture design even in the midst of a zombie apocalypse!), which will store information about the survivors, as well as the resources they own.
+You will develop a **_REST API_** (yes, we care about architecture design even in the midst of a zombie apocalypse!), which will store information about the survivors, as well as the resources they own.
 
 In order to accomplish this, the API must fulfill the following use cases:
 
 - **Add survivors to the database**
 
-  A survivor must have a *name*, *age*, *gender* and *last location (latitude, longitude)*.
+  A survivor must have a _name_, _age_, _gender_ and _last location (latitude, longitude)_.
 
   A survivor also has an inventory of resources of their own property (which you need to declare when upon the registration of the survivor).
 
@@ -26,7 +26,7 @@ In order to accomplish this, the API must fulfill the following use cases:
 
 - **Flag survivor as infected**
 
-  In a chaotic situation like that, it's inevitable that a survivor may get contaminated by the virus.  When this happens, we need to flag the survivor as infected.
+  In a chaotic situation like that, it's inevitable that a survivor may get contaminated by the virus. When this happens, we need to flag the survivor as infected.
 
   An infected survivor cannot trade with others, can't access/manipulate their inventory, nor be listed in the reports (infected people are kinda dead anyway, see the item on reports below).
 
@@ -51,7 +51,7 @@ In order to accomplish this, the API must fulfill the following use cases:
   The trades themselves need not to be stored, but the items must be transferred from one survivor to the other.
 
 | Item         | Points   |
-|--------------|----------|
+| ------------ | -------- |
 | 1 Water      | 4 points |
 | 1 Food       | 3 points |
 | 1 Medication | 2 points |
@@ -61,16 +61,16 @@ In order to accomplish this, the API must fulfill the following use cases:
 
   The API must offer the following reports:
 
-    1. Percentage of infected survivors.
-    1. Percentage of non-infected survivors.
-    3. Average amount of each kind of resource by survivor (e.g. 5 waters per survivor)
-    4. Points lost because of infected survivor.
+  1. Percentage of infected survivors.
+  1. Percentage of non-infected survivors.
+  1. Average amount of each kind of resource by survivor (e.g. 5 waters per survivor)
+  1. Points lost because of infected survivor.
 
----------------------------------------
+---
 
 ## Notes
 
-1. Please use one of the following languages/frameworks: *Javascript (Node + Express + NestJS)* - listed in descending order of desirability.
+1. Please use one of the following languages/frameworks: _Javascript (Node + Express + NestJS)_ - listed in descending order of desirability.
 2. No authentication is needed (it's a zombie apocalypse, no one will try to hack a system while running from a horde of zombies);
 3. We still care about proper programming and architecture techniques, you must showcase that you're worthy of surving the zombie apocalypse through the sheer strength of your skills;
 4. Don't forget to make at least a minimal documentation of the API endpoints and how to use them;

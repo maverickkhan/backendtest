@@ -1,5 +1,5 @@
 export interface Infected {
-    name: string
-    confirmedByCount: number
-    confirmedByNames: Array<string>
+  name: string
+  confirmedByCount: number
+  confirmedByNames: Array<string>
 }
