@@ -24,6 +24,13 @@ const tradeItems = (req: Request, res: Response) => {
   const toIndex = survivors.findIndex((obj) => obj.name === trade.to)
   const fromIndex = survivors.findIndex((obj) => obj.name === trade.from)
 
+  if(survivors[toIndex].infected || survivors[fromIndex].infected){
+    res.status(403).json({
+      msg: 'Trading cannot happen with infected survivor',
+    })
+    return
+  }
+
   //Fetching survivor inventory indexes from db
   const toInvIndex = survivors[toIndex].inventory.findIndex(
     (obj) => obj.item === exchangeItem
